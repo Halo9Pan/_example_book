@@ -1,9 +1,0 @@
-keytool -genseckey -alias "Halo9Pan" -keyalg "RSA" -keysize 2048 -validity 180 -dname "CN=Halo9Pan, OU=Code, O=halo9pan.info, L=Beijing, ST=Beijing, C=CN"
-keytool -selfcert -alias Halo9Pan -validity 360
-keytool -export -alias Halo9Pan -rfc -file F:\Terra\root.cer
-
-keytool -genkey -alias "Halo9Pan" -keyalg "RSA" -keysize 2048 -validity 180 -keystore .keystore -dname "CN=Halo9Pan, OU=Code, O=halo9pan.info, L=Beijing, ST=Beijing, C=CN"
-keytool -genkeypair -alias "Artificer5" -keyalg "RSA" -keysize 2048 -validity 180 -keystore .keystore -dname "CN=Artificer5, OU=Code, O=halo9pan.info, L=Beijing, ST=Beijing, C=CN"
-keytool -certreq -alias Artificer5 -file Artificer5.csr -keystore .keystore
-
-keytool -list -keystore .keystore
